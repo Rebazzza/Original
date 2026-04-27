@@ -53,7 +53,7 @@ public class Kardex {
 
             // Insertar en KARDEX
             String sqlKardex = "INSERT INTO KARDEX (CODIGO_PRODUCTO, FECHA, TIPO_MOVIMIENTO, CANTIDAD, PRECIO_UNITARIO, STOCK_ANTERIOR, STOCK_ACTUAL,DESCRIPCION,CODIGO_REGISTRO) "
-                    + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                    + "VALUES (?, ?, ?, ?, ?, ?, ?, ?,?)";
             ps = conn.prepareStatement(sqlKardex);
             ps.setString(1, codigoProducto);
             ps.setDate(2, new java.sql.Date(fecha.getTime()));
